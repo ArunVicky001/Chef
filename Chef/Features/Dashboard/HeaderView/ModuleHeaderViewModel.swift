@@ -18,18 +18,4 @@ class ModuleHeaderViewModel {
         self.description = description
     }
     
-    init(title: String, studentEntity: StudentProfileEntity) {
-        self.title = title
-        description = "Class \(studentEntity.klass), Div \(studentEntity.division)"
-    }
-    
-    init(title: String, profile: ProfileEntity) {
-        self.title = title
-        switch profile {
-        case .student(let studentProfile):
-            description = "Class \(studentProfile.klass), Div \(studentProfile.division)"
-        case .teacher(let teacherProfile):
-            description = ""
-        }
-    }
 }

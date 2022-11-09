@@ -38,7 +38,7 @@ import UIKit
     public var displayType: DisplayType = .circular
     public var fieldsCount: Int = 4
     public var otpInputType: KeyboardType = .numeric
-    public var fieldFont: UIFont = UIFont.systemFont(ofSize: 20)
+    public var fieldFont: UIFont = UIFont(name: "Poppins-SemiBold", size: 20) ?? UIFont.systemFont(ofSize: 20)
     public var secureEntry: Bool = false
     public var hideEnteredText: Bool = false
     public var requireCursor: Bool = true

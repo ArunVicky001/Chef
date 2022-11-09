@@ -11,13 +11,10 @@ import UIKit
 
 protocol BaseCoordinator {
 //    func start()
-    func handleDeeplink(request: DeeplinkRequest)
     var rootViewController: UINavigationController { get }
 }
 
 extension BaseCoordinator {
-    func handleDeeplink(request: DeeplinkRequest){}
-
     func setRootController(controller: UIViewController, animated: Bool = true) {
         rootViewController.setViewControllers([controller], animated: animated)
     }

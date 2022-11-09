@@ -159,16 +159,17 @@ class OLTextField: SelfDesigningView {
     
     private
     func setupInterface() {
-        textField.font = Fonts.Karla.regular.with(size: 16)
-        errorLabel.font = Fonts.Karla.bold.with(size: 12)
-        titleLabel.font = Fonts.Karla.bold.with(size: 12)
+//        textField.font = Fonts.Karla.regular.with(size: 16)
+//        errorLabel.font = Fonts.Karla.bold.with(size: 12)
+//        titleLabel.font = Fonts.Karla.bold.with(size: 12)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 12)
         errorLabel.numberOfLines = 1
         
-        titleColor = UIColor.topprGray.withAlphaComponent(0.4)
-        underlineColor = UIColor.topprGray.withAlphaComponent(0.4)
-        textColor = UIColor.topprGray
+        titleColor = UIColor.chefGray.withAlphaComponent(0.4)
+        underlineColor = UIColor.chefGray.withAlphaComponent(0.4)
+        textColor = UIColor.chefGray
         errorColor = UIColor.errorColor
-        font = Fonts.Karla.bold.with(size: 16)
+//        font = Fonts.Karla.bold.with(size: 16)
         
         textField.addTarget(self, action: #selector(self.editingChanged), for: .editingChanged)
     }
@@ -186,8 +187,8 @@ class OLTextField: SelfDesigningView {
                 guard let this = self else { return }
                 this.layoutIfNeeded()
                 this.titleLabel.alpha = 1
-                this.titleLabel.textColor = UIColor.green400
-                this.underlineView.backgroundColor = UIColor.green400
+                this.titleLabel.textColor = UIColor.chefOrange
+                this.underlineView.backgroundColor = UIColor.chefOrange
             })
         } else {
             guard !self.titleLabelVerticalCenterConstraint.isActive else { return }

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol RestaurantsUseCase {
+    func fetchResturantList(pinCode: String, completion: @escaping (Result<[DataEntity], NetworkServiceError>) -> Void)
+}

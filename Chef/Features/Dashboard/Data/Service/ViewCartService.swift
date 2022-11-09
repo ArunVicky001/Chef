@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class ViewCartService: ViewCartUseCase {
+    
+    let networkManager: TPNetworkManager
+    init(networkManager: TPNetworkManager) {
+        self.networkManager = networkManager
+    }
+    
+}

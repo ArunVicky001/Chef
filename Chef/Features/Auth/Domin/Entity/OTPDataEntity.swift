@@ -13,5 +13,5 @@ struct OTPDataEntity {
 	let mobileNumber: String
 	let otp: String
 	let text: String
-
+    let status: String?
 }

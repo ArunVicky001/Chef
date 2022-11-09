@@ -1,9 +1,9 @@
 //
 //  DomainConvertible.swift
-//  SuperTeacher
+//  Chef
 //
-//  Created by Bhagyashree Myanamwar on 28/07/20.
-//  Copyright © 2020 Toppr. All rights reserved.
+//  Created by Vignesh Arunagiri on 12/01/22
+//  Copyright (c) . All rights reserved.
 //
 
 import Foundation

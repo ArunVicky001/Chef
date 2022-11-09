@@ -17,7 +17,7 @@ struct ValidateOTPResponse: StructuredParser {
     init(from json: JSON) {
 		statusCode = json["status_code"].intValue
 		message = json["message"].stringValue
-		data = DataResponse(json: json["data"])
+		data = ValidateOTPDataResponse(from: json["data"])
 		status = json["status"].stringValue
     }
 }

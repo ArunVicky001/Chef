@@ -49,7 +49,8 @@ public extension UITableViewCell {
         if let range = className.range(of:".") {
             className = String(className[range.upperBound...])
         } else {
-           Logger.log.debug("Found a mangled class name? \(className)")
+            print(className)
+//           Logger.log.debug("Found a mangled class name? \(className)")
         }
         
         return className

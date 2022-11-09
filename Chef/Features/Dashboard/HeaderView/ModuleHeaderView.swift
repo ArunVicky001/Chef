@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import TopprUtilitiesiOS
 
 class ModuleHeaderView: SelfDesigningView {
 
-    @IBOutlet weak var titleLabel: TopprLabel!
-    @IBOutlet weak var descriptionLabel: TopprLabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
         
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -33,9 +33,9 @@ class ModuleHeaderView: SelfDesigningView {
  
     private
     func setupInterface() {
-        titleLabel.font = Fonts.Karla.bold.with(size: 24 <> 32)
-        titleLabel.textColor = .black
-        descriptionLabel.font = Fonts.Karla.regular.with(size: 14 <> 18)
+        titleLabel.font = UIFont(name: "Poppins-Bold", size: 24)
+        titleLabel.textColor = UIColor.black
+        descriptionLabel.font = UIFont(name: "Poppins-Regular", size: 14)
         descriptionLabel.textColor = UIColor.black.withAlphaComponent(0.5)
     }
   

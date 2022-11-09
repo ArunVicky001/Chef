@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol HomeUseCaseProvider {
+    func menuUseCase() -> MenuUseCase
+    func restaurantsUseCaseUseCase() -> RestaurantsUseCase
+    func orderTrackingUseCase() -> OrderTrackingUseCase
+}

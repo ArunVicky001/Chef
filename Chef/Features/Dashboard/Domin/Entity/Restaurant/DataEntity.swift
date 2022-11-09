@@ -8,14 +8,12 @@
 import Foundation
 
 struct DataEntity {
-
-	let updatedDate: String
-	let chefId: Int
-	let type: String
-	let name: String
-	let zipcode: Int
-	let id: Int
-	let chefName: String
-	let createdDate: String
-
+    let updatedDate: String
+    let chefId: Int
+    let type: String
+    let name: String
+    let zipcode: Int
+    let id: Int
+    let chefName: String
+    let createdDate: String
 }

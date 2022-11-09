@@ -7,7 +7,7 @@
 
 import SwiftyJSON
 
-struct DataResponse: StructuredParser {
+struct ValidateOTPDataResponse: StructuredParser {
 
 	let mobileNumber: String
 	let otp: String
@@ -20,9 +20,9 @@ struct DataResponse: StructuredParser {
     }
 }
 
-extension DataResponse: DomainConvertibleType {
-    func asDomain() -> DataEntity {
-        return DataEntity(
+extension ValidateOTPDataResponse: DomainConvertibleType {
+    func asDomain() -> ValidateOTPDataEntity {
+        return ValidateOTPDataEntity(
             mobileNumber: mobileNumber,
 			otp: otp,
 			deviceId: deviceId)

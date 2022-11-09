@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol LoginUseCase {
+    func loginUser(phone: String, completion: @escaping (Result<OTPDataEntity, NetworkServiceError>) -> Void)
+}

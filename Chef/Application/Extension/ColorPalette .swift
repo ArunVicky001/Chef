@@ -1,17 +1,17 @@
 //
-//  ColorPalette .swift
-//  TeachOS
+//  UIColor.swift
+//  Chef
 //
-//  Created by Bhagyashree Myanamwar on 10/7/21.
+//  Created by Vignesh Arunagiri on 18/04/22.
 //
 
 import UIKit
 
 extension UIColor {
     
-    static let topprBlue: UIColor = UIColor(hex: "55BBEA")
-    static let topprGray: UIColor = UIColor(red: 0.298, green: 0.298, blue: 0.298, alpha: 1)
-    static let topprGreen: UIColor = UIColor(red: 0.37647, green: 0.72549, blue: 0.1215686275, alpha: 1)
+    static let chefBlue: UIColor = UIColor(hex: "55BBEA")
+    static let chefGray: UIColor = UIColor(red: 0.298, green: 0.298, blue: 0.298, alpha: 1)
+    static let chefGreen: UIColor = UIColor(red: 0.37647, green: 0.72549, blue: 0.1215686275, alpha: 1)
     static let errorColor: UIColor = UIColor(red: 0.89, green: 0.4196, blue: 0.443, alpha: 1)
     static let redF36D6D: UIColor = UIColor(hex: "#F36D6D")
     static let redFA6400: UIColor = UIColor(hex: "FA6400")
@@ -51,7 +51,9 @@ extension UIColor {
     static let red300: UIColor = UIColor(hex: "FD054F")
     static let hexECF2FD: UIColor = UIColor(hex: "ECF2FD")
     static let dropShadow: UIColor = UIColor(hex: "2D2D31")
-    
+    static let chefOrange: UIColor = UIColor(hex: "DD6F38")
+    static let cart1: UIColor = UIColor(hex: "E89C4A")
+    static let cart2: UIColor = UIColor(hex: "EF8D5F")
 }
 
 extension UIColor {

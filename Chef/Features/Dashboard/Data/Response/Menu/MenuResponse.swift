@@ -8,23 +8,17 @@
 import SwiftyJSON
 
 struct MenuResponse: StructuredParser {
-
-	let statusCode: Int?
-	let data: [DataResponse]?
-	let successful: Bool?
+    
+    let data: [MenuDataResponse]
 
     init(from json: JSON) {
-		statusCode = json["statusCode"].int
-		data = json["data"].arrayValue.compactMap(DataResponse.init)
-		successful = json["successful"].bool
+        data = json.arrayValue.compactMap(MenuDataResponse.init)
     }
 }
 
 extension MenuResponse: DomainConvertibleType {
-    func asDomain() -> MenuEntity {
-        return MenuEntity(
-            statusCode: statusCode,
-			data: data.map{ $0.asDomain() },
-			successful: successful)
+    func asDomain() -> [MenuDataEntity] {
+        return data.map{ $0.asDomain() }
     }
 }
+

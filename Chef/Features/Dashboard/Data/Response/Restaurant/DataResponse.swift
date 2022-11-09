@@ -43,3 +43,4 @@ extension DataResponse: DomainConvertibleType {
 			createdDate: createdDate)
     }
 }
+

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class OrderTrackingService: OrderTrackingUseCase {
+    let networkManager: TPNetworkManager
+    init(networkManager: TPNetworkManager) {
+        self.networkManager = networkManager
+    }
+}

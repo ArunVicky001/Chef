@@ -1,22 +1,141 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManuListViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuListViewController" customModule="Chef" customModuleProvider="target">
             <connections>
+                <outlet property="bottomConstraint" destination="Mep-xB-chO" id="4cG-b0-cJ6"/>
+                <outlet property="cartCountLabel" destination="YjB-g2-62N" id="sco-ls-45e"/>
+                <outlet property="cartView" destination="ppU-de-wDr" id="5ku-8l-hX9"/>
+                <outlet property="checkoutButton" destination="YX3-Pw-OcT" id="Puj-mQ-aUU"/>
+                <outlet property="headerView" destination="VrO-L7-H7X" id="yqg-YP-iqY"/>
+                <outlet property="headerViewHeightConstraint" destination="9wK-lI-Dkv" id="WFb-vE-hoE"/>
+                <outlet property="menuListCollectionView" destination="pch-W3-XXj" id="ef1-IQ-02Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VrO-L7-H7X" customClass="ModuleHeaderView" customModule="Chef" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="125"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="9wK-lI-Dkv">
+                            <variation key="heightClass=regular-widthClass=regular" constant="155"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeK-8o-tv1">
+                    <rect key="frame" x="10" y="54" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="05S-eq-Qey"/>
+                        <constraint firstAttribute="width" constant="40" id="3Cw-pX-YC2"/>
+                    </constraints>
+                    <state key="normal" image="ic_back_black">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="NXU-EN-RAI"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pch-W3-XXj">
+                    <rect key="frame" x="0.0" y="177" width="414" height="685"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QMt-6g-p93">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppU-de-wDr">
+                    <rect key="frame" x="20" y="698" width="374" height="149"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cart_Icons" translatesAutoresizingMaskIntoConstraints="NO" id="i23-bi-JlV">
+                            <rect key="frame" x="15" y="20" width="24" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="XVZ-zI-1Ma"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="You have 3 items in shopping cart, check out now." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjB-g2-62N">
+                            <rect key="frame" x="47" y="18" width="312" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Qs5-SV-XDr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX3-Pw-OcT">
+                            <rect key="frame" x="15" y="80" width="344" height="54"/>
+                            <color key="backgroundColor" white="1" alpha="0.50426841887417218" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="4du-Vg-W5K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Check out now"/>
+                            <connections>
+                                <action selector="checkoutAction:" destination="-1" eventType="touchUpInside" id="78p-5Q-kKr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.50811433455603594" green="0.74509803921568629" blue="0.241043244772154" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="YX3-Pw-OcT" firstAttribute="leading" secondItem="ppU-de-wDr" secondAttribute="leading" constant="15" id="64U-ZX-Q9o"/>
+                        <constraint firstItem="YX3-Pw-OcT" firstAttribute="centerX" secondItem="ppU-de-wDr" secondAttribute="centerX" id="9ub-jw-GbX"/>
+                        <constraint firstItem="YX3-Pw-OcT" firstAttribute="trailing" secondItem="YjB-g2-62N" secondAttribute="trailing" id="CEQ-Dr-qR1"/>
+                        <constraint firstItem="YjB-g2-62N" firstAttribute="top" secondItem="ppU-de-wDr" secondAttribute="top" constant="18" id="Fbg-oW-YYv"/>
+                        <constraint firstAttribute="bottom" secondItem="YX3-Pw-OcT" secondAttribute="bottom" constant="15" id="FfL-JU-wWm"/>
+                        <constraint firstItem="YjB-g2-62N" firstAttribute="leading" secondItem="i23-bi-JlV" secondAttribute="trailing" constant="8" symbolic="YES" id="MPs-ep-qG2"/>
+                        <constraint firstItem="YX3-Pw-OcT" firstAttribute="top" secondItem="YjB-g2-62N" secondAttribute="bottom" constant="18" id="Qty-s8-9hd"/>
+                        <constraint firstItem="i23-bi-JlV" firstAttribute="top" secondItem="ppU-de-wDr" secondAttribute="top" constant="20" symbolic="YES" id="n0V-A4-78J"/>
+                        <constraint firstItem="YX3-Pw-OcT" firstAttribute="leading" secondItem="i23-bi-JlV" secondAttribute="leading" id="syW-AN-83t"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eeK-8o-tv1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="0Pn-bt-TqW"/>
+                <constraint firstItem="eeK-8o-tv1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="6gq-bT-pj4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VrO-L7-H7X" secondAttribute="trailing" id="KxZ-jz-x3b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pch-W3-XXj" secondAttribute="bottom" id="Mep-xB-chO"/>
+                <constraint firstItem="pch-W3-XXj" firstAttribute="leading" secondItem="VrO-L7-H7X" secondAttribute="leading" id="SVT-ZQ-SbY"/>
+                <constraint firstItem="ppU-de-wDr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Tuu-lv-YZe"/>
+                <constraint firstItem="ppU-de-wDr" firstAttribute="centerX" secondItem="pch-W3-XXj" secondAttribute="centerX" id="bGs-rK-ONh"/>
+                <constraint firstItem="ppU-de-wDr" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-15" id="fdk-fP-DrI"/>
+                <constraint firstItem="VrO-L7-H7X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hov-sm-58z"/>
+                <constraint firstItem="VrO-L7-H7X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qIK-ih-QyY"/>
+                <constraint firstItem="ppU-de-wDr" firstAttribute="centerX" secondItem="VrO-L7-H7X" secondAttribute="centerX" id="r7j-J5-jfn"/>
+                <constraint firstItem="pch-W3-XXj" firstAttribute="top" secondItem="VrO-L7-H7X" secondAttribute="bottom" constant="8" symbolic="YES" id="tqQ-7r-Nd1"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_back_black" width="14" height="16"/>
+        <image name="ic_cart_Icons" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

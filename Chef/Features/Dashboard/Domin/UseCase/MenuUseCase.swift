@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol MenuUseCase {
+    func fetchMenuList(restaurentID: String, completion: @escaping (Result<[MenuDataEntity], NetworkServiceError>) -> Void) 
+}

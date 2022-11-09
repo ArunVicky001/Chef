@@ -18,7 +18,7 @@ struct OTPResponse: StructuredParser {
 		statusCode = json["status_code"].intValue
 		message = json["message"].stringValue
 		status = json["status"].stringValue
-		data = DataResponse(json: json["data"])
+		data = OTPDataResponse(from: json["data"])
     }
 }
 

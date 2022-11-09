@@ -1,9 +1,9 @@
 //
 //  NetworkParser.swift
-//  TopprUtilitiesiOS
+//  Chef
 //
-//  Created by Vedant Mahant on 30/04/19.
-//  Copyright © 2019 Toppr. All rights reserved.
+//  Created by Vignesh Arunagiri on 12/01/22
+//  Copyright (c) . All rights reserved.
 //
 
 import Foundation

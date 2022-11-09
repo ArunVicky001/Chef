@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol ValidateOTPUseCase {
+    func validate(mobileNumber: String, deviceID: String, otp: String, completion: @escaping (Result<ValidateOTPDataEntity, NetworkServiceError>) -> Void)
+}

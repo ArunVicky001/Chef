@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+class DashboardServiceProvider: HomeUseCaseProvider {
+   
+    let networkManager: TPNetworkManager
+    init(networkManager: TPNetworkManager) {
+        self.networkManager = networkManager
+    }
+
+    func menuUseCase() -> MenuUseCase {
+        return MenuService(networkManager: networkManager)
+    }
+
+    func restaurantsUseCaseUseCase() -> RestaurantsUseCase {            
+        return RestaurantsService(networkManager: networkManager)
+    }
+    
+    func orderTrackingUseCase() -> OrderTrackingUseCase {
+        return OrderTrackingService(networkManager: networkManager)
+    }
+    
+}

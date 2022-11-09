@@ -1,22 +1,14 @@
 //
-//  AuthUseCaseProvider.swift
-//  TeachOS
+//  LoginViewController.swift
+//  Chef
 //
-//  Created by Bhagyashree Myanamwar on 9/22/21.
+//  Created by Vignesh Arunagiri on 16/04/22.
 //
 
 import Foundation
 
 protocol AuthUseCaseProvider {
-    func countryListUseCase() -> CountryListUseCase
-    func checkPhoneUseCase() -> CheckPhoneUseCase
-    func signupUseCase() -> SignupUseCase
-    func sendOtpUseCase() -> SendOTPUseCase
-    func verifyOtpUseCase() -> VerifyOTPUseCase
-    func getJwtTokenUseCase() -> GetJWTTokenUseCase
-    func logoutUseCase() -> LogoutUseCase
-    func batchDetailUseCase() -> BatchDetailUseCase
-    func joinBatchUseCase() -> JoinBatchUseCase
-    func studentInfoUseCase() -> StudentDetailUseCase
+    func loginUseCase() -> LoginUseCase
+    func validateOTPUseCase() -> ValidateOTPUseCase
 }
 

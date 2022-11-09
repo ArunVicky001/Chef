@@ -1,13 +1,15 @@
 //
 //  ObservableProperty.swift
-//  Toppr
+//  Chef
 //
-//  Created by Ujwal Manjunath on 23/10/18.
-//  Copyright © 2018 Toppr. All rights reserved.
+//  Created by Vignesh Arunagiri on 12/01/22
+//  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 import UIKit
+
+typealias VoidClosure = (() -> Void)
 
 typealias Key = String
 
