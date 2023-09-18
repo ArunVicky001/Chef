@@ -556,6 +556,9 @@
 			children = (
 				FCAF1B37280B383E00530FA5 /* Auth */,
 				FCC796F52823DD6C002BA689 /* AuthServiceProvider.swift */,
+				FC286047280D341D000ECC77 /* AuthCoordinator.swift */,
+				FCFEE342280EC6B900C52076 /* AuthSceneProvider.swift */,
+				FC286045280D318F000ECC77 /* AuthUseCaseProvider.swift */,
 				FCFEE33C280EAF3E00C52076 /* Dashboard */,
 			);
 			path = Features;
@@ -638,7 +641,6 @@
 			isa = PBXGroup;
 			children = (
 				FCAF1B3F280B38D100530FA5 /* UseCase */,
-				FC286045280D318F000ECC77 /* AuthUseCaseProvider.swift */,
 				FCAF1B3E280B38CB00530FA5 /* Entity */,
 				FCAF1B3D280B38BE00530FA5 /* RequestParams */,
 			);
@@ -650,8 +652,6 @@
 			children = (
 				FCAF1B40280B39C600530FA5 /* OTP */,
 				FCAF1B2D280B36F700530FA5 /* Login */,
-				FC286047280D341D000ECC77 /* AuthCoordinator.swift */,
-				FCFEE342280EC6B900C52076 /* AuthSceneProvider.swift */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
