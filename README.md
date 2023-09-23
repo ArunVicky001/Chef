@@ -8,15 +8,15 @@ Clean Architecture: The app follows a modular and maintainable code structure ba
 MVVM Design Pattern: The Model-View-ViewModel pattern is used to create a clear separation between the UI logic and business logic. This results in a highly modular and testable codebase.
 Coordinator Pattern: For navigation and flow control, the Coordinator pattern is employed. This pattern helps in managing navigation and keeps view controllers independent.
 
-**Dependencies**
+### Dependencies
 
-  pod 'SwiftyJSON', '~> 4.0'
-  pod 'SwiftGen'
-  pod 'Alamofire'
-  pod 'SDWebImage'
-  pod 'TPKeyboardAvoiding'
-  pod 'ReachabilitySwift'
-  pod 'SkeletonView'
+- pod 'SwiftyJSON', '~> 4.0'
+- pod 'SwiftGen'
+- pod 'Alamofire'
+- pod 'SDWebImage'
+- pod 'TPKeyboardAvoiding'
+- pod 'ReachabilitySwift'
+- pod 'SkeletonView'
   
 Contributing
 
