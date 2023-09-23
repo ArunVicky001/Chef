@@ -10,12 +10,12 @@ import Foundation
 class AppServiceProvider {
     
     func makeAuthServiceProvider() -> AuthUseCaseProvider {
-        let netWorkManager = TPNetworkManager(baseURL: AppConfiguration.baseURL)
+        let netWorkManager = NetworkManager(baseURL: AppConfiguration.baseURL)
         return AuthServiceProvider(networkManager: netWorkManager)
     }
     
     func makeDashboardServiceProvider() -> HomeUseCaseProvider {
-        let netWorkManager = TPNetworkManager(baseURL: AppConfiguration.baseURL)
+        let netWorkManager = NetworkManager(baseURL: AppConfiguration.baseURL)
         return DashboardServiceProvider(networkManager: netWorkManager)
     }
     

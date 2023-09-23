@@ -1,10 +1,7 @@
 //
 //  UICollectionView+Extensions.swift
 //  SchoolOS
-//
-//  Created by Bhagyashree Myanamwar on 04/08/20.
-//  Copyright © 2020 Toppr. All rights reserved.
-//
+
 
 import Foundation
 import UIKit

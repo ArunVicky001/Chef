@@ -44,7 +44,7 @@
 		FC28604A280D39F8000ECC77 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC286049280D39F8000ECC77 /* AppCoordinator.swift */; };
 		FC39CAF22846879900C9B92E /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC39CAF02846879900C9B92E /* RestaurantCell.swift */; };
 		FC39CAF32846879900C9B92E /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC39CAF12846879900C9B92E /* RestaurantCell.xib */; };
-		FC42C31E282234B200B51AF5 /* TPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42C31D282234B200B51AF5 /* TPNetworkManager.swift */; };
+		FC42C31E282234B200B51AF5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42C31D282234B200B51AF5 /* NetworkManager.swift */; };
 		FC42C3202822E4B200B51AF5 /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42C31F2822E4B200B51AF5 /* NetworkServiceError.swift */; };
 		FC4A8CCC28213788000F2DA9 /* NetworkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4A8CCB28213788000F2DA9 /* NetworkParser.swift */; };
 		FC4A8CCE2821383B000F2DA9 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4A8CCD2821383B000F2DA9 /* DomainConvertibleType.swift */; };
@@ -167,7 +167,7 @@
 		FC286049280D39F8000ECC77 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FC39CAF02846879900C9B92E /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		FC39CAF12846879900C9B92E /* RestaurantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
-		FC42C31D282234B200B51AF5 /* TPNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPNetworkManager.swift; sourceTree = "<group>"; };
+		FC42C31D282234B200B51AF5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FC42C31F2822E4B200B51AF5 /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		FC4A8CCB28213788000F2DA9 /* NetworkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkParser.swift; sourceTree = "<group>"; };
 		FC4A8CCD2821383B000F2DA9 /* DomainConvertibleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
@@ -611,7 +611,7 @@
 				FC727758280F224F00F2E1F7 /* KeyboardObserver.swift */,
 				FC4A8CCB28213788000F2DA9 /* NetworkParser.swift */,
 				FC4A8CCD2821383B000F2DA9 /* DomainConvertibleType.swift */,
-				FC42C31D282234B200B51AF5 /* TPNetworkManager.swift */,
+				FC42C31D282234B200B51AF5 /* NetworkManager.swift */,
 				FC42C31F2822E4B200B51AF5 /* NetworkServiceError.swift */,
 				FC4FABE52825484C008BA956 /* NetworkReachabilityManager.swift */,
 			);
@@ -991,7 +991,7 @@
 			files = (
 				FCAD5A7F284B694600E81AF9 /* MenuListCell.swift in Sources */,
 				FC1CF7E82840DA79001D9ACE /* ValidateOTPResponse.swift in Sources */,
-				FC42C31E282234B200B51AF5 /* TPNetworkManager.swift in Sources */,
+				FC42C31E282234B200B51AF5 /* NetworkManager.swift in Sources */,
 				FCAD5A89284B6FB000E81AF9 /* ModuleHeaderViewModel.swift in Sources */,
 				FCAD5A7A284B690F00E81AF9 /* MenuListViewController.swift in Sources */,
 				FC0044AA28493019005B7617 /* DataEntity.swift in Sources */,

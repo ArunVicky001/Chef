@@ -1,10 +1,7 @@
 //
 //  LoadingButton.swift
 //  OnboardingLibraryiOS
-//
-//  Created by Hamza Ansari on 1/7/20.
-//  Copyright © 2020 Toppr. All rights reserved.
-//
+
 
 import UIKit
 

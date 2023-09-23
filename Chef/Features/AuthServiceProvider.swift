@@ -9,8 +9,8 @@ import Foundation
 
 class AuthServiceProvider: AuthUseCaseProvider {
     
-    let networkManager: TPNetworkManager
-    init(networkManager: TPNetworkManager) {
+    let networkManager: NetworkManager
+    init(networkManager: NetworkManager) {
         self.networkManager = networkManager
     }
     

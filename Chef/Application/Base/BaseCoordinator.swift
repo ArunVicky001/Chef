@@ -3,9 +3,6 @@
 //  BaseCoordinator.swift
 //  SuperTeacher
 //
-//  Created by Hamza Ansari on 27/07/20.
-//  Copyright © 2020 Toppr. All rights reserved.
-//
 
 import UIKit
 

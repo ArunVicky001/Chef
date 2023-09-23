@@ -1,10 +1,6 @@
 //
 //  OLTextField.swift
-//  Toppr
-//
-//  Created by Vedant Mahant on 25/01/19.
-//  Copyright © 2019 Toppr. All rights reserved.
-//
+
 
 import UIKit
 

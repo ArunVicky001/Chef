@@ -40,9 +40,9 @@ extension NetworkServiceError: LocalizedError {
         case .serviceUnavailable:
             return "We are unable to process your request. Please retry or contact our customer support: 1800 2099 199"
         case .serverUnderMaintenance:
-            return "Hi There, Toppr seems down for some maintenance. We will be back shortly. Sorry for the convenience caused."
+            return "Hi There, Server seems down for some maintenance. We will be back shortly. Sorry for the convenience caused."
         case .serverError(let error):
-            return error.message ?? "Hi There, Toppr seems down for some maintenance. We will be back shortly. Sorry for the convenience caused."
+            return error.message ?? "Hi There, Server seems down for some maintenance. We will be back shortly. Sorry for the convenience caused."
         case .networkError(let error):
             return error.localizedDescription
         case .responseError(let error):

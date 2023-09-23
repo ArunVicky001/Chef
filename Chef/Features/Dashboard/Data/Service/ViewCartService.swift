@@ -9,8 +9,8 @@ import Foundation
 
 class ViewCartService: ViewCartUseCase {
     
-    let networkManager: TPNetworkManager
-    init(networkManager: TPNetworkManager) {
+    let networkManager: NetworkManager
+    init(networkManager: NetworkManager) {
         self.networkManager = networkManager
     }
     

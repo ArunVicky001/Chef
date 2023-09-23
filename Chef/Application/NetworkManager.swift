@@ -1,5 +1,5 @@
 //
-//  TPNetworkManager.swift
+//  NetworkManager.swift
 //  Chef
 //
 //  Created by Vignesh Arunagiri on 04/05/22.
@@ -31,7 +31,7 @@ extension Alamofire.DataRequest: CancellableRequest {
     }
 }
 
-public class TPNetworkManager {
+public class NetworkManager {
     var additionalParams: [String: Any] = [:]
     public lazy var reachabilityManager = try? NetworkReachabilityManager()
     private let session: Session
